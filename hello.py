@@ -105,6 +105,7 @@ def save_file(friend):
 def read_file():
     try:
         f = open("friends.txt", "r")
+        # itterate through a function generator
         for friend in read_friends(f):
             add_friend(friend)
         f.close()
@@ -117,12 +118,21 @@ def read_friends(file):
         yield line
 
 
-read_file()
-print_friends_titlecase()
+# lambda functions
+def double(x): print(x * 2)
 
-friend_name = input("Enter friend name: ")
-friend_id = int(input("Enter friend ID: "))
 
-add_friend(friend_name, friend_id)
-save_file(friend_name)
-read_file()
+def tripple(y): print(y * 3)
+
+
+# read_file()
+# print_friends_titlecase()
+
+# friend_name = input("Enter friend name: ")
+# friend_id = int(input("Enter friend ID: "))
+
+# add_friend(friend_name, friend_id)
+# save_file(friend_name)
+# read_file()
+double(19)
+tripple(5)
