@@ -125,14 +125,14 @@ def double(x): print(x * 2)
 def tripple(y): print(y * 3)
 
 
-# read_file()
-# print_friends_titlecase()
+read_file()
+print_friends_titlecase()
 
-# friend_name = input("Enter friend name: ")
-# friend_id = int(input("Enter friend ID: "))
+friend_name = input("Enter friend name: ")
+friend_id = int(input("Enter friend ID: "))
 
-# add_friend(friend_name, friend_id)
-# save_file(friend_name)
-# read_file()
+add_friend(friend_name, friend_id)
+save_file(friend_name)
+read_file()
 double(19)
 tripple(5)
