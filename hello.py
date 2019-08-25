@@ -105,11 +105,16 @@ def save_file(friend):
 def read_file():
     try:
         f = open("friends.txt", "r")
-        for friend in f.readlines():
+        for friend in read_friends(f):
             add_friend(friend)
         f.close()
     except Exception:
         print("Could not read file")
+
+
+def read_friends(file):
+    for line in file:
+        yield line
 
 
 read_file()
