@@ -136,3 +136,11 @@ save_file(friend_name)
 read_file()
 double(19)
 tripple(5)
+
+#list comprehension
+numbers_list = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+#print a new list of numbers which are less than 5 from the given numbers list in one line
+print([number for number in numbers_list if number < 5])
+
+# => [1, 1, 2, 3]
