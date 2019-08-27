@@ -145,3 +145,15 @@ print([number for number in numbers_list if number < 5])
 #print([[output] [itteration] [condition]])
 
 # => [1, 1, 2, 3]
+
+#give divisors of a particular number from user input
+
+def show_divisors(number_from_input):
+    number_range = list(range(1, 1001))
+    for nr in number_range:
+        if nr % number_from_input == 0:
+            print(nr)
+                
+                
+nr_from_input = int(input("Give me a number: "))
+show_divisors(nr_from_input)
