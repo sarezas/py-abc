@@ -173,3 +173,7 @@ def find_in_lists(list1, list2):
             
                 
 find_in_lists(a, b) 
+
+#do the same in one line and add list c before it
+c = []
+print([number for number in b if number in a and number not in c])
