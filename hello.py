@@ -173,7 +173,9 @@ def find_in_lists(list1, list2):
             
                 
 find_in_lists(a, b) 
+# => [1, 2, 3, 5, 8, 13]
 
 #do the same in one line and add list c before it
 c = []
 print([number for number in b if number in a and number not in c])
+# => [1, 2, 3, 5, 8, 13]
