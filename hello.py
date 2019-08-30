@@ -179,3 +179,17 @@ find_in_lists(a, b)
 c = []
 print([number for number in b if number in a and number not in c])
 # => [1, 2, 3, 5, 8, 13]
+
+#check if a word is a palindrome (a string or number that read the same forwards and backwards)
+
+def is_it_palindrome():
+    word = input("Print a word to check if it is a palindrome: ")
+    backward = word[::-1]
+    
+    if word == backward:
+        print("The word is a palindrome!")
+    else:
+        print("The word isn't a palindrome! ")  
+         
+    
+is_it_palindrome()
